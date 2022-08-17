@@ -52,9 +52,25 @@
   font-weight: 800;
   src: local(""), url("../fonts/poppins-v20-latin-800.woff2") format("woff2"), url("../fonts/poppins-v20-latin-800.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
 *,
