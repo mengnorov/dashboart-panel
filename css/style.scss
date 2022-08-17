@@ -79,6 +79,10 @@ $color-success:#41f1b6;
 $color-warning:#ffbb55;
 $color-info-dark:#7d8da1;
 $color-info-light:#dce1eb;
+$color-dark-variant: #677483;
+$color-dark:#363949;
+$color-primary-variant:#111e88;
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -90,7 +94,13 @@ body{
     font-family: "Poppins",sans-serif;
     overflow: hidden;
 }
-
+.container{
+    display: grid;
+    width: 96%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto 23rem;
+}
 *,
 *::before,
 *::after {
@@ -114,4 +124,110 @@ small{
     height: 2.8rem;
     border-radius:50%;
     overflow: hidden;
+}
+.text-muted{
+    color:$color-info-dark;
+}
+p{
+    color:$color-dark-variant;
+}
+.primary{
+    color:$color-primary;
+}
+.danger{
+    color:$color-danger;
+}
+.success{
+    color:$color-success;
+}
+.warning{
+    color:$color-warning;
+}
+aside{
+    height: 100vh;
+    .top{
+        background-color:#fff;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        margin-top: 1.4rem;
+    }
+    .logo{
+        display: flex;
+        gap: 0.8rem;
+        img{
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+    .close{
+        display: none;
+    }
+}
+/*===========SIDEBAT=========*/
+aside{
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        height: 86vh;
+        position: relative;
+        background-color:#fff;
+        top: 3rem;
+        .message-count{
+            background-color:$color-danger;
+            color:#fff;
+            border-radius:50%;
+            padding:7px;
+            font-size: 11px;
+        }
+        a{
+            display: flex;
+            align-items:center;
+            color:$color-info-dark;
+            margin-left: 2rem;
+            margin-top: 0.5rem;     
+            gap: 1rem;
+            position: relative;
+            height: 3.7rem;
+            transition: all 300ms ease;
+            .active{
+                background-color: #999;
+                color:$color-primary;
+            }
+            span{
+                font-size: 1.6rem;
+            }
+        }
+        
+    }
+    h3{
+        font-weight: 500;
+    }
+}
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+  }
+aside .sidebar a.active{
+    background-color: lightgray;
+    color:$color-primary;
+    margin-left: 0;
+}
+aside .sidebar a.active::before{
+    content:'';
+    width: 6px;
+    height: 100%;
+    background-color:$color-primary;
+}
+aside .sidebar a.active span{
+    color:$color-primary;
+    margin-left: calc(1rem - 3px);
+}
+aside .sidebar a:hover{
+    color:$color-primary;
+}
+aside .sidebar a:hover img{
+    margin-left: 1rem;
+    transition: 0.4s ease;
 }

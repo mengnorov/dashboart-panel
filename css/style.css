@@ -74,6 +74,14 @@ body {
   overflow: hidden;
 }
 
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 14rem auto 23rem;
+}
+
 *,
 *::before,
 *::after {
@@ -102,4 +110,121 @@ small {
   height: 2.8rem;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+p {
+  color: #677483;
+}
+
+.primary {
+  color: #7380ec;
+}
+
+.danger {
+  color: #ff7782;
+}
+
+.success {
+  color: #41f1b6;
+}
+
+.warning {
+  color: #ffbb55;
+}
+
+aside {
+  height: 100vh;
+}
+aside .top {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+aside .logo {
+  display: flex;
+  gap: 0.8rem;
+}
+aside .logo img {
+  width: 2rem;
+  height: 2rem;
+}
+aside .close {
+  display: none;
+}
+
+/*===========SIDEBAT=========*/
+aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 86vh;
+  position: relative;
+  background-color: #fff;
+  top: 3rem;
+}
+aside .sidebar .message-count {
+  background-color: #ff7782;
+  color: #fff;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 11px;
+}
+aside .sidebar a {
+  display: flex;
+  align-items: center;
+  color: #7d8da1;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  gap: 1rem;
+  position: relative;
+  height: 3.7rem;
+  transition: all 300ms ease;
+}
+aside .sidebar a .active {
+  background-color: #999;
+  color: #7380ec;
+}
+aside .sidebar a span {
+  font-size: 1.6rem;
+}
+aside h3 {
+  font-weight: 500;
+}
+
+aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+
+aside .sidebar a.active {
+  background-color: lightgray;
+  color: #7380ec;
+  margin-left: 0;
+}
+
+aside .sidebar a.active::before {
+  content: "";
+  width: 6px;
+  height: 100%;
+  background-color: #7380ec;
+}
+
+aside .sidebar a.active span {
+  color: #7380ec;
+  margin-left: calc(1rem - 3px);
+}
+
+aside .sidebar a:hover {
+  color: #7380ec;
+}
+
+aside .sidebar a:hover img {
+  margin-left: 1rem;
+  transition: 0.4s ease;
 }/*# sourceMappingURL=style.css.map */
