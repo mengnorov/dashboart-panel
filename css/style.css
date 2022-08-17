@@ -154,10 +154,6 @@ aside .logo img {
   width: 2rem;
   height: 2rem;
 }
-aside .close {
-  display: none;
-}
-
 /*===========SIDEBAT=========*/
 aside .sidebar {
   display: flex;
