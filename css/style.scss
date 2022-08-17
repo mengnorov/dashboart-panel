@@ -72,6 +72,13 @@
     text-decoration: none;
     list-style: none;
 }
+/*COLOR # */
+$color-primary: #7380ec;
+$color-danger: #ff7782;
+$color-success:#41f1b6;
+$color-warning:#ffbb55;
+$color-info-dark:#7d8da1;
+$color-info-light:#dce1eb;
 html {
     box-sizing: border-box;
     height: 100%;
@@ -98,4 +105,13 @@ button {
 }
 *:focus {
     outline: 0;
+}
+small{
+    font-size: 0.75rem;   
+}
+.profil-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius:50%;
+    overflow: hidden;
 }
