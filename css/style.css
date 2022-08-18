@@ -188,6 +188,9 @@ aside .sidebar a .active {
 aside .sidebar a span {
   font-size: 1.6rem;
 }
+aside .sidebar .add-product {
+  font-size: 14px;
+}
 aside h3 {
   font-weight: 500;
 }
