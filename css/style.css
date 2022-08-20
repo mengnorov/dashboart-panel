@@ -386,6 +386,11 @@ main .recent-order table:hover {
 .right .top button {
   display: none;
 }
+.right .top .profile {
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+}
 .right .theme-togler {
   background: lightslategrey;
   display: flex;
@@ -406,10 +411,40 @@ main .recent-order table:hover {
   justify-content: center;
 }
 
+.theme-togler img.active {
+  border-radius: 2rem;
+}
+
 .admin {
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 40px;
   height: 40px;
+}
+
+/*===resent-updates===*/
+.right .resent-updates {
+  margin-top: 1rem;
+}
+.right .resent-updates h2 {
+  margin-bottom: 0.8rem;
+}
+
+.updates {
+  border-radius: 2rem;
+  padding: 1.8rem;
+  background: #fff;
+  box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
+  transition: all 300ms ease;
+}
+.updates .update {
+  display: grid;
+  grid-template-columns: 2.6rem auto;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.updates:hover {
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */
