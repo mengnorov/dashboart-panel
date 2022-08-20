@@ -340,6 +340,12 @@ main .insights small {
 main .recent-order {
   margin-top: 2rem;
 }
+main .recent-order a {
+  text-align: center;
+  display: block;
+  margin: 1rem auto;
+  color: #7380ec;
+}
 main .recent-order h2 {
   margin-bottom: 0.8rem;
 }
@@ -350,6 +356,14 @@ main .recent-order table {
   padding: 1.8rem;
   text-align: center;
   box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
+}
+main .recent-order table tbody td {
+  height: 2.8rem;
+  border-bottom: 1px solid darkgrey;
+  color: #677483;
+}
+main .recent-order table tbody tr:last-child {
+  border: none;
 }
 
 main .recent-order table:hover {

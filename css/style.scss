@@ -254,7 +254,6 @@ main{
         gap: 1.6rem;
     }
 }
-
 main .insights>div{
     background: #fff;
     padding: 1.8rem;
@@ -330,6 +329,12 @@ main .insights small{
 /*-----------RECENT ORDERS--------*/
 main .recent-order{
     margin-top: 2rem;
+    a{
+        text-align: center;
+        display: block;
+        margin: 1rem auto;
+        color:$color-primary;
+    }
     h2{
         margin-bottom: 0.8rem;
     }
@@ -340,9 +345,21 @@ main .recent-order{
         padding: 1.8rem;
         text-align: center;
         box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
+        tbody{
+            td{
+                height: 2.8rem;
+                border-bottom: 1px solid darkgrey;
+                color:$color-dark-variant
+            }
+            tr:last-child{
+                border:none;
+                
+            }
+        }
     }
-
 }
-main .recent-order table:hover{
-    box-shadow:none;
+main .recent-order table:hover {
+    box-shadow: none;
 }
+//944661916 Rami
+//942033309 Asqar 
