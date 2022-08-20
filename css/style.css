@@ -372,4 +372,44 @@ main .recent-order table:hover {
 #menu-btn {
   border: none;
   background: none;
+}
+
+/*------RIGHT--------*/
+.right {
+  margin-top: 1.4rem;
+}
+.right .top {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+.right .top button {
+  display: none;
+}
+.right .theme-togler {
+  background: lightslategrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  width: 4.2rem;
+  cursor: pointer;
+  border-radius: 20%;
+}
+.right .theme-togler img {
+  width: 30%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin {
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */
