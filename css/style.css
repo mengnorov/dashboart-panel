@@ -295,6 +295,17 @@ main .insights .progress {
   width: 92px;
   height: 92px;
 }
+main .insights .progress .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000;
+  align-items: center;
+}
 
 main svg {
   width: 7rem;
@@ -309,4 +320,14 @@ main svg circle {
   transform: translate(5px, 5px);
   stroke-dasharray: 110;
   stroke-dashoffset: 92;
+}
+
+main .sales svg circle {
+  stroke-dasharray: 200;
+  stroke-dashoffset: -30;
+}
+
+main .expenses svg circle {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 20;
 }/*# sourceMappingURL=style.css.map */
