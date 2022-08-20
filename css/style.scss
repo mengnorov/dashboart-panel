@@ -326,3 +326,23 @@ main .insights small{
     margin-top: 1.3rem;
     display: block;
 }
+
+/*-----------RECENT ORDERS--------*/
+main .recent-order{
+    margin-top: 2rem;
+    h2{
+        margin-bottom: 0.8rem;
+    }
+    table{
+        background: #fff;
+        width: 100%;
+        border-radius: 2rem;
+        padding: 1.8rem;
+        text-align: center;
+        box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
+    }
+
+}
+main .recent-order table:hover{
+    box-shadow:none;
+}
