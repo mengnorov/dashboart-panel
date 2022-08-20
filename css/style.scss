@@ -260,6 +260,11 @@ main .insights>div{
     padding: 1.8rem;
     margin-top: 1rem;
     box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
+    border-radius:1.8rem;
+    h3{
+        margin: 1rem 0 0.6rem;
+        font-size: 1rem;
+    }
     img{
         background-color:$color-primary;
         border-radius:50%;
@@ -275,4 +280,27 @@ main .insights>div.expenses img{
 }
 main .insights>div.income img{
     background-color:$color-success;
+}
+main .insights>div .middle{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+main .insights .progress{
+    position: relative;
+    width: 92px;
+    height: 92px;
+}
+main svg {
+    width: 7rem;
+    height: 7rem;
+}
+main svg circle{
+    fill: none; //circleni rangi
+    stroke: $color-primary;//aylana rangi
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 110;
+    stroke-dashoffset: 92;
 }
