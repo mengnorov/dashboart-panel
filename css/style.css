@@ -303,7 +303,6 @@ main .insights .progress .number {
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid #000;
   align-items: center;
 }
 
@@ -330,4 +329,9 @@ main .sales svg circle {
 main .expenses svg circle {
   stroke-dasharray: 80;
   stroke-dashoffset: 20;
+}
+
+main .insights small {
+  margin-top: 1.3rem;
+  display: block;
 }/*# sourceMappingURL=style.css.map */
