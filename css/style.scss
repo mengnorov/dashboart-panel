@@ -142,7 +142,7 @@ p{
     color:$color-success;
 }
 .warning{
-    color:$color-warning;
+    color: $color-warning;
 }
 aside{
     height: 100vh;
@@ -349,7 +349,6 @@ main .recent-order{
             td{
                 height: 2.8rem;
                 border-bottom: 1px solid darkgrey;
-                color:$color-dark-variant
             }
             tr:last-child{
                 border:none;
@@ -361,5 +360,7 @@ main .recent-order{
 main .recent-order table:hover {
     box-shadow: none;
 }
-//944661916 Rami
-//942033309 Asqar 
+#menu-btn{
+    border:none;
+    background:none;
+}

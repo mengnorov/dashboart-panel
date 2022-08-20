@@ -360,7 +360,6 @@ main .recent-order table {
 main .recent-order table tbody td {
   height: 2.8rem;
   border-bottom: 1px solid darkgrey;
-  color: #677483;
 }
 main .recent-order table tbody tr:last-child {
   border: none;
@@ -368,4 +367,9 @@ main .recent-order table tbody tr:last-child {
 
 main .recent-order table:hover {
   box-shadow: none;
+}
+
+#menu-btn {
+  border: none;
+  background: none;
 }/*# sourceMappingURL=style.css.map */
