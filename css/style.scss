@@ -500,3 +500,55 @@ main .recent-order table:hover {
         }
     }
 }
+
+/*=========MEDIA QUERIES========*/
+@media(max-width:1200px) {
+    .conrainer{
+        width: 94%;
+        grid-template-columns:7rem auto 23rem ;
+    }
+    aside{
+        .logo{
+            h2{
+                display: none;
+            }
+        }
+        .sidebar{
+            h3{
+                display: none;
+            }
+            a{
+                width: 5.6rem;
+            }
+            a:last-child{
+                position: relative;
+                margin-top: 1.8rem;
+            }
+        }
+    }
+    main{
+        .insights{
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .recent-order{
+            width: 94%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 2rem 0 0 8.8rem;
+            table{
+                width: 83%vw;
+                background-color:darkred;
+            }
+        }
+    }
+    main table thead tr th:last-child,
+    main table thead tr th:first-child{
+        display: none;
+    }
+    main table tbody tr th:last-child,
+    main table tbody tr th:first-child{
+        display: none;
+    }
+}
