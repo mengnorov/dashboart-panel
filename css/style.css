@@ -64,6 +64,8 @@
 /*==DARK THEME VARIABLES*/
 .dark-theme-variables {
   background-color: #181a1e;
+  color: #f50e0e;
+  box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
 }
 
 html {
