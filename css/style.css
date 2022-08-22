@@ -61,6 +61,11 @@
 }
 
 /*COLOR # */
+/*==DARK THEME VARIABLES*/
+.dark-theme-variables {
+  background-color: #181a1e;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -514,9 +519,6 @@ main .recent-order table:hover {
     width: 94%;
     grid-template-columns: 7rem auto 23rem;
   }
-  aside .sidebar h3 {
-    display: none;
-  }
   aside .sidebar a {
     width: 5.6rem;
   }
@@ -555,12 +557,15 @@ main table tbody tr th:first-child {
   aside {
     position: fixed;
     width: 18rem;
+    left: -100%;
     box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
     z-index: 3;
     height: 100vh;
     padding: 1.8rem;
-    left: 0;
     display: none;
+    -webkit-animation: showMenu 400ms ease forwards;
+            animation: showMenu 400ms ease forwards;
+    background-color: #fff;
   }
   aside .logo {
     margin-left: 1rem;
@@ -590,6 +595,7 @@ main table tbody tr th:first-child {
     margin: 0 auto 4rem;
   }
   .right .top {
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -598,7 +604,6 @@ main table tbody tr th:first-child {
     height: 4.6rem;
     background-color: #fff;
     width: 100%;
-    margin: 0;
     z-index: 2;
     box-shadow: 0.1rem 0.1rem #dce1eb;
   }
@@ -614,7 +619,20 @@ main table tbody tr th:first-child {
     position: absolute;
     left: 1rem;
   }
+  .right .profile .admin {
+    margin-right: 5rem;
+  }
   .right .profile .info {
     display: none;
+  }
+  @-webkit-keyframes showMenu {
+    to {
+      left: 0;
+    }
+  }
+  @keyframes showMenu {
+    to {
+      left: 0;
+    }
   }
 }/*# sourceMappingURL=style.css.map */

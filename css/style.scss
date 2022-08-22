@@ -82,7 +82,10 @@ $color-info-light:#dce1eb;
 $color-dark-variant: #677483;
 $color-dark:#363949;
 $color-primary-variant:#111e88;
-
+/*==DARK THEME VARIABLES*/
+.dark-theme-variables{
+    background-color:#181a1e;
+}
 html {
     box-sizing: border-box;
     height: 100%;
@@ -507,9 +510,9 @@ main .recent-order table:hover {
     }
     aside{
         .sidebar{
-            h3{
-                display: none;
-            }
+            // h3{
+            //     display: none;
+            // }
             a{
                 width: 5.6rem;
             }
@@ -552,17 +555,19 @@ main .recent-order table:hover {
     aside{
         position: fixed;
         width: 18rem;
+        left: -100%;
         box-shadow: -1px 12px 20px 3px rgba(119, 138, 144, 0.28);
         z-index: 3;
         height: 100vh;
         padding: 1.8rem;
-        left: 0;
         display: none;
+        animation: showMenu 400ms ease forwards;
+        background-color:#fff;
         .logo{
             margin-left: 1rem;
-            h2{
-                display: inline;
-            }
+                h2{
+                    display: inline;
+                }
         }
         .close{
             display: inline-block;
@@ -586,6 +591,7 @@ main .recent-order table:hover {
         width: 94%;
         margin: 0 auto 4rem;
         .top{
+            margin: 0;
             position: fixed;
             top: 0;
             left: 0;
@@ -594,7 +600,6 @@ main .recent-order table:hover {
             height: 4.6rem;
             background-color:#fff;
             width: 100%; 
-            margin: 0;
             z-index: 2;
             box-shadow:0.1rem 0.1rem $color-info-light; 
             .theme-togler{
@@ -612,9 +617,17 @@ main .recent-order table:hover {
             }
         }
         .profile{
+            .admin{
+                margin-right: 5rem;
+            }
             .info{
                 display: none;
             }
+        }
+    }
+    @keyframes showMenu {
+        to{
+            left: 0;
         }
     }
 }
