@@ -102,7 +102,7 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: "Poppins",sans-serif;
-    // overflow: hidden;
+    overflow:auto;
     color:$color-dark;
 }
 .container{
@@ -612,7 +612,7 @@ main .recent-order table:hover {
             .theme-togler{
                 width: 4.4rem;
                 position: absolute;
-                left: 66%;
+                left: 50%;
 
             }
             button{

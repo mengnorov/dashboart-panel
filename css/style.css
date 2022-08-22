@@ -78,6 +78,7 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  overflow: auto;
   color: #363949;
 }
 
@@ -612,7 +613,7 @@ main table tbody tr th:first-child {
   .right .top .theme-togler {
     width: 4.4rem;
     position: absolute;
-    left: 66%;
+    left: 50%;
   }
   .right .top button {
     display: inline-block;
